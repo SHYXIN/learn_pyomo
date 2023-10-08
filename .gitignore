@@ -1,0 +1,14 @@
+# 忽略 Python 二进制文件
+*.pyc
+*.pyo
+
+# 忽略 Python 编译器生成的文件
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+
+# 忽略 IDE 生成的文件
+.idea/
+*.iml
+
+
