@@ -1,0 +1,15 @@
+Add constraint          =>          opt.add_constraint()
+Add variable            =>          opt.add_var()
+Add block               =>          opt.add_block()
+Set objective           =>          opt.set_objective()
+Remove constraint       =>          opt.remove_constraint()
+Remove variable         =>          opt.remove_var()
+Remove block            =>          opt.remove_block()
+Modify variable         =>          opt.update_var()
+modify mutable parameter=>          opt.remove_constraint()
+                                    opt.param.value = value
+                                    opt.add_constraint()
+modify Expression       =>          opt.remove_constraint()
+                                    m.expr += val
+                                    opt.add_constrant()
+

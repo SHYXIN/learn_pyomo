@@ -1,0 +1,23 @@
+         10533235 function calls (10530953 primitive calls) in 9.375 seconds
+
+   Ordered by: cumulative time
+   List reduced from 701 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.001    0.001    9.375    9.375 C:\Users\WX847\Desktop\learn\new_project\learn_pyomo\ch9\9.3_persistent_solver\warehouse_localtion.py:74(solve_parametric)
+       30    0.002    0.000    9.268    0.309 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\base\solvers.py:509(solve)
+       30    0.001    0.000    3.913    0.130 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\solver\shellcmd.py:191(_presolve)
+       30    0.001    0.000    3.873    0.129 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\base\solvers.py:649(_presolve)
+       30    0.000    0.000    3.872    0.129 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\base\solvers.py:712(_convert_problem)
+       30    0.001    0.000    3.872    0.129 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\base\convert.py:26(convert_problem)
+       30    0.000    0.000    3.842    0.128 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\solvers\plugins\converter\model.py:42(apply)
+       30    1.850    0.062    3.827    0.128 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\block.py:1763(write)
+       30    0.001    0.000    3.617    0.121 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\solver\shellcmd.py:226(_apply_solver)
+       30    0.001    0.000    3.611    0.120 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\opt\solver\shellcmd.py:292(_execute_command)
+       31    0.001    0.000    2.956    0.095 C:\Users\WX847\Miniconda3\envs\omoenv\lib\subprocess.py:447(run)
+       31    0.000    0.000    2.856    0.092 C:\Users\WX847\Miniconda3\envs\omoenv\lib\subprocess.py:920(communicate)
+       62    0.000    0.000    2.832    0.046 C:\Users\WX847\Miniconda3\envs\omoenv\lib\subprocess.py:1014(wait)
+       62    0.000    0.000    2.832    0.046 C:\Users\WX847\Miniconda3\envs\omoenv\lib\subprocess.py:1250(_wait)
+       31    2.831    0.091    2.831    0.091 {built-in method _winapi.WaitForSingleObject}
+
+

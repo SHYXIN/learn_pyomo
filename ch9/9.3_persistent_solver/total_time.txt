@@ -1,0 +1,23 @@
+         10533235 function calls (10530953 primitive calls) in 9.375 seconds
+
+   Ordered by: internal time
+   List reduced from 701 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       31    2.831    0.091    2.831    0.091 {built-in method _winapi.WaitForSingleObject}
+       30    1.850    0.062    3.827    0.128 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\block.py:1763(write)
+      224    0.691    0.003    0.691    0.003 {method 'acquire' of '_thread.lock' objects}
+       30    0.362    0.012    1.099    0.037 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\solvers\plugins\solvers\GLPK.py:257(process_soln_file)
+   306000    0.315    0.000    0.548    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\set.py:575(bounds)
+      182    0.264    0.001    0.266    0.001 {built-in method io.open}
+  1373370    0.164    0.000    0.164    0.000 {method 'pop' of 'list' objects}
+   225090    0.164    0.000    0.183    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\constraint.py:217(has_ub)
+       30    0.150    0.005    0.521    0.017 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\solvers\plugins\solvers\GLPK.py:357(_process_soln_bas)
+   153060    0.135    0.000    0.224    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\expr\symbol_map.py:82(createSymbol)
+      180    0.130    0.001    0.204    0.001 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\indexed_component.py:371(<listcomp>)
+   153000    0.108    0.000    0.414    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\var.py:435(ub)
+   153000    0.108    0.000    0.420    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\var.py:422(lb)
+       31    0.095    0.003    0.095    0.003 {built-in method _winapi.CreateProcess}
+   608823    0.091    0.000    0.091    0.000 {method 'split' of 'str' objects}
+
+

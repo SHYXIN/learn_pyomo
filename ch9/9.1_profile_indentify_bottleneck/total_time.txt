@@ -1,0 +1,23 @@
+         10533392 function calls (10531110 primitive calls) in 9.107 seconds
+
+   Ordered by: internal time
+   List reduced from 701 to 15 due to restriction <15>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+       31    2.768    0.089    2.768    0.089 {built-in method _winapi.WaitForSingleObject}
+       30    1.800    0.060    3.710    0.124 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\block.py:1763(write)
+      232    0.714    0.003    0.714    0.003 {method 'acquire' of '_thread.lock' objects}
+       30    0.357    0.012    1.085    0.036 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\solvers\plugins\solvers\GLPK.py:257(process_soln_file)
+   306000    0.312    0.000    0.527    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\set.py:575(bounds)
+      182    0.208    0.001    0.209    0.001 {built-in method io.open}
+   225090    0.163    0.000    0.182    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\constraint.py:217(has_ub)
+  1373370    0.159    0.000    0.159    0.000 {method 'pop' of 'list' objects}
+       30    0.146    0.005    0.516    0.017 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\solvers\plugins\solvers\GLPK.py:357(_process_soln_bas)
+   153060    0.132    0.000    0.227    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\expr\symbol_map.py:82(createSymbol)
+      180    0.119    0.001    0.194    0.001 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\indexed_component.py:371(<listcomp>)
+   153000    0.103    0.000    0.402    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\var.py:422(lb)
+   153000    0.102    0.000    0.398    0.000 C:\Users\WX847\Miniconda3\envs\omoenv\lib\site-packages\pyomo\core\base\var.py:435(ub)
+   608823    0.090    0.000    0.090    0.000 {method 'split' of 'str' objects}
+       31    0.087    0.003    0.087    0.003 {built-in method _winapi.CreateProcess}
+
+
