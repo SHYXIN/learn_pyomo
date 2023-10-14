@@ -1,0 +1,62 @@
+#
+# 10.3.1.1 Simple sets
+#
+
+# An empty set
+set A := ;
+
+# A set of numbers
+set A := 1 2 3;
+
+# A set of strings
+set B := north south east west;
+
+# A set of mixed types
+set C :=
+0
+-1.0e + 10
+'foo bar'
+"100"
+;
+
+#
+# 10.3.1.2 Sets of Tuple data
+#
+
+set A :=(1,2,3) (4,5,6);
+
+set A := 1 2 3 4 5 6;
+
+set A : A1 A2 A3 A4 :=
+    1 : +  -  -  +
+    2 : +  -  +  -
+    3 : -  +  -  -;
+
+# This data command declares the following five 2-tuples:
+# (’A1’,1), (’A1’,2), (’A2’,3), (’A3’,2), (’A4’,1).
+
+
+# model.A = pyo.Set(dimen=4)
+set A :=
+    (1, 2, *, 4) A B
+    (*, 2, * ,4) A B C D
+;
+
+# (1, 2, ’A’, 4)
+# (1, 2, ’B’, 4)
+# (’A’, 2, ’B’, 4)
+# (’C’, 2, ’D’, 4)
+
+
+#
+# 10.3.1.3 Set Arrays
+#
+# set <set-name>[<index>] := [<value>] ...;
+# model.A = pyo.Set()
+# model.B = pyo.Set(model.A)
+
+set A := 1 aaa 'a b';
+
+set B[1] := 0 1 2;
+set B[aaa] := aa bb cc;
+set B['a b'] := 'aa bb cc';

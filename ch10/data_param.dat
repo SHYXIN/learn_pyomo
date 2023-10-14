@@ -1,0 +1,154 @@
+
+param A := 1.4;
+param B := 1;
+param C := abc;
+param D := true;
+param E := 1.0e+04;
+
+
+# 10.3.2.1 one-dimensional Parameter Data
+# model.A = pyo.Set()
+# model.B = pyo.Param(model.A)
+
+set A := a c e;
+
+param B := a 10 c 30 e 50;
+
+set A := a c e;
+
+param B :=
+a 10
+c 30
+e 50
+;
+
+# model.A = pyo.Set()
+# model.B = pyo.Param(model.A)
+# model.C = pyo.Param(model.A)
+# model.D = pyo.Param(model.A)
+
+set A := a c e;
+
+param : B C D :=
+a 10 -1 1.1
+c 30 -3 3.3
+e 50 -5 5.5
+;
+
+set A:= a c e g;
+
+param : B C D :=
+a 10 -1 1.1
+c 30 -3 3.3
+e 50 -5 5.5
+;
+
+set A := a c e;
+
+param : B C D :=
+A  . -1 1.1
+c 30 .  3.3
+e 50 -5  .
+;
+
+param : A : B C D :=
+a 10 -1 1.1
+c 30 -3 3.3
+e 50 -5 5.5
+;
+
+set A := a c e;
+
+param B default 0.0 :=
+c 30
+e 50
+;
+
+# 10.3.2.2 Multi-Dimensional Parameter Data
+
+# model.A = pyo.Set(dimen=2)
+# model.B = pyo.Param(model.A)
+
+set A := a 1 c 2 e 3;
+
+param B :=
+a 1 10
+c 2 30
+e 3 50;
+
+set A := a 1 c 2 e 3;
+
+param B default 0 :=
+a 1 10
+c 2 .
+e 3 50;
+
+# model.A = pyo.Set(dimen=2)
+# model.B = pyo.Param(model.A)
+# model.C = pyo.Param(model.A)
+# model.D = pyo.Param(model.A)
+
+set A := a 1 c 2 e 3;
+
+param : B  C D:=
+a 1 10 -1 1.1
+c 2 30 -3 3.3
+e 3 50 -5 5.5
+;
+
+param : A : B C D :=
+a 1 10 -1 1.1
+c 2 30 -3 3.3
+e 3 50 -5 5.5
+;
+
+# model.A = pyo.Set(dimen=2)
+# model.B = pyo.Param(model.A)
+
+set A := 1 a 1 c 1 e 2 a 2 c 2 e 3 a 3 c 3 e;
+param B : a c e :=
+1 1 2 3
+2 4 5 6
+3 7 8 9
+;
+
+set A := 1 a 1 c 1 e 2 a 2 c 2 e 3 a 3 c 3 e;
+
+param B (tr) : 1 2 3 :=
+a 1 4 7
+c 2 5 8
+e 3 6 9
+;
+
+# model.A = pyo.Set(dimen=4)
+# model.B = pyo.Param(model.A)
+
+set A := (a,1,a,1) (a,2,a,2) (b,1,b,1) (b,2,b,2)
+
+param B :=
+    [*, 1, *, 1] a a 10 b b 20
+    [*, 2, *, 2] a a 30 b b 40
+;
+# The B parameter consists of four values:
+# B[a,1,a,1]=10, B[b,1,b,1]=20,
+# B[a,2,a,2]=30, and B[b,2,b,2]=40.
+
+
+# include command
+include ex1.dat;
+include ex2.dat;
+
+# namespace
+
+set C := 1 2 3;
+
+namespace ns1
+{
+    set C := 4 5 6;
+}
+
+namespace ns2
+{
+    set C := 7 8 9;
+}
+

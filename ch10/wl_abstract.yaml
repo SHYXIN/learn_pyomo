@@ -1,0 +1,8 @@
+# abstract5.yaml
+model:
+  filename: wl_abstract.py
+data:
+  files:
+    - wl_data.dat
+solvers:
+  - solver name: glpk

@@ -1,0 +1,9 @@
+
+pyomo solve --solver=glpk --solver-opitons='mipgap=0.01' concrete1.py
+
+pyomo solve --solver=glpk --solver-suffix='.*' concrete2.py
+
+dual - constraint dual values
+rc - reduced costs
+slack - constraint slack values
+
