@@ -1,0 +1,55 @@
+# ==========================================================
+# = Solver Results                                         =
+# ==========================================================
+# ----------------------------------------------------------
+#   Problem Information
+# ----------------------------------------------------------
+Problem: 
+- Lower bound: -inf
+  Upper bound: inf
+  Number of objectives: 1
+  Number of constraints: 12
+  Number of variables: 9
+  Sense: unknown
+# ----------------------------------------------------------
+#   Solver Information
+# ----------------------------------------------------------
+Solver: 
+- Status: ok
+  Message: Ipopt 3.11.1\x3a Optimal Solution Found
+  Termination condition: optimal
+  Id: 0
+  Error rc: 0
+  Time: 0.18798518180847168
+# ----------------------------------------------------------
+#   Solution Information
+# ----------------------------------------------------------
+Solution: 
+- number of solutions: 1
+  number of solutions displayed: 1
+- Gap: None
+  Status: optimal
+  Message: Ipopt 3.11.1\x3a Optimal Solution Found
+  Objective:
+    f:
+      Value: 5.999999886349968
+  Variable:
+    compl[1].v:
+      Value: 0.9999999908864446
+    compl[2].v:
+      Value: 9.13270487756537e-09
+    compl[3].v:
+      Value: 0.9999999905669883
+    compl[4].v:
+      Value: 9.63990150497523e-09
+    x[1]:
+      Value: 0.9999999908864446
+    x[2]:
+      Value: 9.13270487756537e-09
+    x[3]:
+      Value: 0.9999999905669883
+    x[4]:
+      Value: 9.63990150497523e-09
+    x[5]:
+      Value: 0.9999999961636492
+  Constraint: No values
